@@ -1,0 +1,9 @@
+:root { color-scheme: dark; background: #070a15; }
+* { box-sizing: border-box; }
+html, body, #frame { width: 100%; height: 100%; min-width: 320px; min-height: 240px; margin: 0; overflow: hidden; }
+body { background: #070a15; font-family: "Avenir Next", "Segoe UI", Arial, sans-serif; }
+#frame { position: relative; isolation: isolate; }
+#game { display: block; width: 100%; height: 100%; touch-action: none; outline: none; cursor: crosshair; }
+#game:focus-visible { outline: 2px solid rgba(112, 231, 239, .72); outline-offset: -5px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
